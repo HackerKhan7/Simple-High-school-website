@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>kay secondary school</title>
+        <h1 style="text-align:center;">WELCOME TO KAY SECONDARY SCHOOL</h1><br>
+<style>
+/*styles for heading before form */
+.heading {
+  text-align: center;
+  background-color: green;
+  padding: 40px;
+  font-size: 50px;
+}
+    /*for paragrah below form */
+.paragraph1{
+  text-align: center;
+  padding: 60px;
+  font-family: "Times Roman New"
+  font-size: 20px
+  background-color: black;
+  color: white;
+}
+
+/*for Heading name "Food Exploria" */
+.edit{
+  text-shadow: 2px 2px 5px lightyellow;
+  color: orangered;
+}
+
+/* to resize few texts "JUGAD CODE" */
+.edit2{
+  font-size: 20px;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:40px;	 	 
+}
+ul#menu li {
+    display: inline-block;
+}
+
+ul#menu li a {
+    color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px 5px 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: orange;
+}
+.dropbtn {
+    color: black;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+#nav {
+    line-height:30px;
+    height:300px;
+    width:300px;
+    float:left;
+    padding:5px;	      	      
+}
+#section {
+    height:300px;
+    width:70%;
+    float:right;
+    padding:10px;
+</style>
+</head>
+<body>
+    <div class="heading">
+     <strong><span class="edit"> KAY GAMES DEPARTMENT </span></strong>
+    </div>
+<ul id="menu">
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="aboutus.html">ABOUT US</a></li>
+ <div class="dropdown">
+  <button class="dropbtn">ACADEMICS</button>
+  <div class="dropdown-content"> 
+    <a href="mathematics.html">MATHEMATICS</a>
+    <a href="sciences.html">SCIENCES</a>
+    <a href="humanities.html">HUMANITIES</a>
+    <a href="technical.html">TECHNICAL</a>
+  </div>
+</div>
+ <div class="dropdown">
+  <button class="dropbtn">MANAGEMENT</button>
+  <div class="dropdown-content">
+    <a href="boarding.html">BOARDING</a>
+    <a href="guidance.html">GUIDANCE</a>
+    <a href="games.html">GAMES</a>
+     <a href="clubs.html">CLUBS AND SOCIETIES</a>
+  </div>
+</div>
+<li><a href="events.html">EVENT</a></li>
+  <li><a href="gallery.html">GALLERY</a></li>
+  <li><a href="contact.php">CONTACT</a></li>
+</ul>  <br>
+<div class="slideshow-container"width: 70%; margin: auto;>
+
+<div class="mySlides fade">
+  <img src="images/image6.jpg" width="100%" height="500">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/image7.jpg" width="100%" height="500">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/image8.jpg" width="100%" height="500">
+</div>
+<div class="mySlides fade">
+  <img src="images/image9.jpg" width="100%" height="500">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/image10.jpg" width="100%" height="500">
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+    <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500); // Change image every 4 seconds
+}
+</script>  
+<div id="nav">
+<img src="images/image2o.jpg" height="200px" width="150px" alt="head of games department">
+</div>
+  <br>
+<h2> Games offered</h2>    
+<ol>Athletics</ol>
+<ol>Table tennis</ol>
+<ol>Volley ball</ol>
+<ol>Hockey</ol>
+<ol>Swimming</ol>
+<ol>foot ball</ol>
+<br>
+<div id="footer">
+Copyright ©WillyKhan2020.com
+</div>
+    </body>
+</html>
